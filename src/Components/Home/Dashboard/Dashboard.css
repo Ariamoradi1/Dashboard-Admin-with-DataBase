@@ -1,0 +1,135 @@
+*{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.dashboard{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.dashIcon{
+    width: 100px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dashIconDown{
+    width: 100px;
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.paper{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.orders{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.company{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+hr{
+    color: #f0f0f0;
+}
+
+.list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.users{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-right: 80px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.paperInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color:  #1976d2;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    color: #1976d2;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #1976d2;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color:  #1976d2;
+}
+
+.styled-table tbody tr{
+    color: black;
+    font-weight: bold;
+}
+
+.add-user{
+    display: flex;
+    justify-content: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

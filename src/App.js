@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { useRoutes } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import { routes } from "./Routes";
+import { myData } from "./Context/myContext";
 
 function App() {
+  const [name, setName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [age, setAge] = useState('')
+    const [email, setEmail] = useState('')
+    const [userArray, setUserArray] = useState([])
+  const route = useRoutes(routes)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <myData.Provider value={{
+      name,
+      setName,
+      lastName,
+      setLastName,
+      age,
+      setAge,
+      email,
+      setEmail,
+      userArray,
+      setUserArray
+    }}>
+    <Navbar/>
+    {route}
+    </myData.Provider>
+    </>
   );
 }
 
