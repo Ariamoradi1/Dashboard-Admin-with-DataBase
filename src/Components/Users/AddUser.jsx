@@ -20,11 +20,17 @@ const AddUser = () => {
             alert('Erorr')
         } else {
             fetch('https://dashboard-users-b6cc4-default-rtdb.firebaseio.com/users.json',{
-            method : 'POST',
-            body : JSON.stringify(userObj)
-         }).then(res => res.json()).then(data => console.log(data))
+              method : 'POST',
+              body : JSON.stringify(userObj)
+           }).then(res => res.json()).then(data => console.log(data))
+          
         }
-    }
+      }
+          
+        
+      
+          
+            
     return(
         <>
         
