@@ -133,3 +133,9 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

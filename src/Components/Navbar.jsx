@@ -99,7 +99,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       onClose={handleMenuClose}
     >
      <Link to='/Users'> <MenuItem onClick={handleMenuClose}>Employees</MenuItem></Link>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+     <Link to='/Products'><MenuItem onClick={handleMenuClose}>Products</MenuItem></Link>
     </Menu>
   );
 
