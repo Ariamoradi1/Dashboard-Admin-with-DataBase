@@ -24,7 +24,7 @@ const chartData = [
 const Chartdash = () => {
   return (
     <div className="paper">
-    <Paper style={{width:'600px',height:'500px'}}>
+    <Paper className='papers' style={{width:'600px',height:'500px'}}>
     <Chart
           data={chartData}
         >
@@ -39,7 +39,7 @@ const Chartdash = () => {
         </Chart>
 
     </Paper>
-    <Paper style={{width:'600px',height:'500px'}}>
+    <Paper className='papers' style={{width:'600px',height:'500px'}}>
     <Chart
           data={chartData}
         >

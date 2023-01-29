@@ -16,6 +16,9 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { Link } from 'react-router-dom';
+import ReactSwitch from 'react-switch';
+import { useContext } from 'react';
+import { myData } from "../Context/myContext";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -63,6 +66,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+  const myDatas = useContext(myData)
 
   const handleProfileMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -187,6 +191,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+          <ReactSwitch className='switch' onChange={myDatas.toggleTheme} checked={myDatas.darkMode === "dark"}/>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={4} color="error">
                 <MailIcon />

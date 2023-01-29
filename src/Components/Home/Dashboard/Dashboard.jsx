@@ -22,15 +22,15 @@ const Dashboard = () => {
   return (
     <>
     <div className="dashboard">
-    <Card style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
+    <Card className='card' style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
       <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+        <Typography className='typ' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         Total Page Views
         </Typography>
         <Typography variant="h5" component="div">
         4,42,236
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        <Typography className='typ' sx={{ mb: 1.5 }} color="text.secondary">
         You made an extra 35,000 this year
         </Typography>
         <div className="dashIconDown">
@@ -42,15 +42,15 @@ const Dashboard = () => {
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
-    <Card style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
+    <Card className='card' style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
     <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+      <Typography className='typ' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
       Total Users
       </Typography>
       <Typography variant="h5" component="div">
       78,250
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography className='typ' sx={{ mb: 1.5 }} color="text.secondary">
       You made an extra 8,900 this year
       </Typography>
       <div className="dashIcon">
@@ -62,15 +62,15 @@ const Dashboard = () => {
       <Button size="small">Learn More</Button>
     </CardActions>
   </Card>
-  <Card style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
+  <Card className='card' style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
     <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+      <Typography className='typ' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
       Total Order
       </Typography>
       <Typography variant="h5" component="div">
       18,800
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography className='typ' sx={{ mb: 1.5 }} color="text.secondary">
       You made an extra 1,943 this year
       </Typography>
       <div className="dashIconDown">
@@ -82,15 +82,15 @@ const Dashboard = () => {
       <Button size="small">Learn More</Button>
     </CardActions>
   </Card>
-  <Card style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
+  <Card className='card' style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
     <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+      <Typography className='typ' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
       Total Sales
       </Typography>
       <Typography variant="h5" component="div">
       $35,078
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography className='typ' sx={{ mb: 1.5 }} color="text.secondary">
       You made an extra $20,395 this year
       </Typography>
       <div className="dashIcon">
@@ -102,15 +102,15 @@ const Dashboard = () => {
       <Button size="small">Learn More</Button>
     </CardActions>
   </Card>
-  <Card style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
+  <Card className='card' style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
     <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+      <Typography className='typ' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
       Total Sales
       </Typography>
       <Typography variant="h5" component="div">
       $35,078
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography className='typ' sx={{ mb: 1.5 }} color="text.secondary">
       You made an extra $20,395 this year
       </Typography>
       <div className="dashIcon">
@@ -122,15 +122,15 @@ const Dashboard = () => {
       <Button size="small">Learn More</Button>
     </CardActions>
   </Card>
-  <Card style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
+  <Card className='card' style={{width:'400px',marginTop:'40px'}} sx={{ minWidth: 275 }}>
     <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+      <Typography className='typ' sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
       Total Sales
       </Typography>
       <Typography variant="h5" component="div">
       $35,078
       </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
+      <Typography className='typ' sx={{ mb: 1.5 }} color="text.secondary">
       You made an extra $20,395 this year
       </Typography>
       <div className="dashIcon">

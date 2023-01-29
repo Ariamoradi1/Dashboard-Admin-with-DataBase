@@ -123,6 +123,10 @@ hr{
     font-weight: bold;
 }
 
+#dark .styled-table tbody tr {
+    color: #1976d2;
+    font-weight: bold;
+}
 .add-user{
     display: flex;
     justify-content: center;
@@ -138,4 +142,84 @@ a{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+#dark{
+    background-color:  #141413;
+    color: #fff;
+}
+#dark .lists {
+    background-color: black;
+    color: #fff;
+}
+#dark .papers {
+    background-color: black;
+    color: #fff;
+}
+#dark .tableContainer {
+    background-color: black;
+}
+#dark .tablecell {
+    color: #fff;
+}
+#dark .card{
+    background-color: black;
+    color: #fff;
+}
+
+#dark .typ {
+    color: #fff;
+}
+
+#dark .xaxis {
+    background-color: black;
+    color: #fff;
+}
+
+#light{
+    background-color: #fff;
+    color: black;
+}
+
+.switch{
+    margin-top: 10px;
+}
+
+.rechart{
+    margin-top: 50px;
+}
+
+.modalContainer {
+    text-align: center;
+    
+}
+
+.paperModal{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.deleteButton{
+    border: none;
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.cancelButton{
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
 }

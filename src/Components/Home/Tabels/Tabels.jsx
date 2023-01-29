@@ -50,15 +50,15 @@ const Tabels =  () => {
     return ( 
         <>
         <div className="orders">
-         <TableContainer style={{width:'650px'}} component={Paper}>
+         <TableContainer className='tableContainer' style={{width:'650px'}} component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell><h4>Tracking No.</h4></TableCell>
-            <TableCell align="right"><h4>Product Name</h4></TableCell>
-            <TableCell align="right"><h4>Total Order</h4></TableCell>
-            <TableCell align="right"><h4>Status</h4></TableCell>
-            <TableCell align="right"><h4>Total Amount</h4></TableCell>
+            <TableCell className='tablecell'><h4>Tracking No.</h4></TableCell>
+            <TableCell className='tablecell' align="right"><h4>Product Name</h4></TableCell>
+            <TableCell className='tablecell' align="right"><h4>Total Order</h4></TableCell>
+            <TableCell className='tablecell' align="right"><h4>Status</h4></TableCell>
+            <TableCell className='tablecell' align="right"><h4>Total Amount</h4></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -67,19 +67,19 @@ const Tabels =  () => {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell className='tablecell' component="th" scope="row">
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+              <TableCell className='tablecell' align="right">{row.calories}</TableCell>
+              <TableCell className='tablecell' align="right">{row.fat}</TableCell>
+              <TableCell className='tablecell' align="right">{row.carbs}</TableCell>
+              <TableCell className='tablecell' align="right">{row.protein}</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
     </TableContainer>
-    <Paper style={{width:'550px',height:'500px'}}>
+    <Paper className='papers' style={{width:'550px',height:'500px'}}>
     <div className="company">
     <Typography variant="span" component="div">
     Company Finance Growth

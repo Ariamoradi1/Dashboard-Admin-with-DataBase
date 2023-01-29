@@ -36,8 +36,8 @@ const Listme = () => {
   return (
     <>
     <div className="list">
-    <Paper style={{width:'400px',height:'300px'}}>
-     <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <Paper className='papers' style={{width:'400px',height:'300px'}}>
+     <List className='lists' sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
           <Avatar alt="Remy Sharp" src="nigga.png" />
@@ -47,6 +47,7 @@ const Listme = () => {
           secondary={
             <React.Fragment>
               <Typography
+              className='typ'
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
@@ -54,7 +55,15 @@ const Listme = () => {
               >
                 Ali Connors
               </Typography>
+              <Typography
+              className='typ'
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
               {" — I'll be in your neighborhood doing errands this…"}
+              </Typography>
             </React.Fragment>
           }
         />
@@ -69,6 +78,7 @@ const Listme = () => {
           secondary={
             <React.Fragment>
               <Typography
+                className='typ'
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
@@ -76,7 +86,15 @@ const Listme = () => {
               >
                 to Scott, Alex, Jennifer
               </Typography>
+              <Typography
+              className='typ'
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
               {" — Wish I could come, but I'm out of town this…"}
+              </Typography>
             </React.Fragment>
           }
         />
@@ -91,6 +109,7 @@ const Listme = () => {
           secondary={
             <React.Fragment>
               <Typography
+              className='typ'
                 sx={{ display: 'inline' }}
                 component="span"
                 variant="body2"
@@ -98,14 +117,22 @@ const Listme = () => {
               >
                 Sandra Adams
               </Typography>
+              <Typography
+              className='typ'
+                sx={{ display: 'inline' }}
+                component="span"
+                variant="body2"
+                color="text.primary"
+              >
               {' — Do you have Paris recommendations? Have you ever…'}
+              </Typography>
             </React.Fragment>
           }
         />
       </ListItem>
     </List>
     </Paper>
-    <Paper style={{width:'600px',height:'300px'}}>
+    <Paper className='papers' style={{width:'600px',height:'300px'}}>
     <Bar data={{
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [

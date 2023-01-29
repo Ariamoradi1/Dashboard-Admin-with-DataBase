@@ -15,16 +15,17 @@ const AddUser = () => {
         age : myDatas.age,
         email : myDatas.email
     }
-    const clickHandler = () => {
+    const clickHandler = async () => {
         if(myDatas.name === '' || myDatas.lastName === '' || myDatas.age === '' || myDatas.email === '') {
             alert('Erorr')
         } else {
-            fetch('https://dashboard-users-b6cc4-default-rtdb.firebaseio.com/users.json',{
+           await fetch('https://dashboard-users-b6cc4-default-rtdb.firebaseio.com/users.json',{
               method : 'POST',
               body : JSON.stringify(userObj)
            }).then(res => res.json()).then(data => console.log(data))
           
         }
+        myDatas.setRealTime(prev => !prev)
       }
           
         
