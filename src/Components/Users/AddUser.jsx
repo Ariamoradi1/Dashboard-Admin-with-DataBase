@@ -47,6 +47,7 @@ const AddUser = () => {
       }}
     >
       <TextField
+        className="inputUser"
         helperText="Please enter your name"
         id="demo-helper-text-aligned"
         label="Name"
@@ -54,6 +55,7 @@ const AddUser = () => {
         onChange={(e) => myDatas.setName(e.target.value)}
       />
       <TextField
+        className="inputUser"
         helperText=" "
         id="demo-helper-text-aligned-no-helper"
         label="LastName"
@@ -61,6 +63,7 @@ const AddUser = () => {
         onChange={(e) => myDatas.setLastName(e.target.value)}
       />
       <TextField
+        className="inputUser"
         helperText=" "
         id="demo-helper-text-aligned-no-helper"
         label="Email"
@@ -68,6 +71,7 @@ const AddUser = () => {
         onChange={(e) => myDatas.setAge(e.target.value)}
       />
        <TextField
+        className="inputUser"
         helperText=" "
         id="demo-helper-text-aligned-no-helper"
         label="Age"

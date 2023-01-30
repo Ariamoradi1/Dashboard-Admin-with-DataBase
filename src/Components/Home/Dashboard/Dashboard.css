@@ -1,5 +1,7 @@
 *{
     font-family: "Roboto","Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .dashboard{
@@ -190,14 +192,23 @@ a{
 }
 
 .modalContainer {
-    text-align: center;
-    
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.paperModal{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+.paperModal{  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+}
+
+#dark .paperModal{
+    background-color: black;
+    color: #fff;
 }
 
 .button{
@@ -223,3 +234,13 @@ a{
     border-radius: 8px;
     cursor: pointer;
 }
+
+#dark .appBar {
+    background-color: black;
+    color: #fff;
+}
+
+#dark .paperInput {
+    background-color: black;
+}
+
