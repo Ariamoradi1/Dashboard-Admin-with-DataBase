@@ -184,7 +184,7 @@ a{
 }
 
 .switch{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .rechart{
@@ -244,3 +244,39 @@ a{
     background-color: black;
 }
 
+.ul-search{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.paper-search{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 170px;
+}
+
+.li-search{
+    font-size: 18px;
+}
+
+#dark .paper-search{
+    background-color: black;
+}
+
+#dark a{
+    color: #fff;
+}
+
+.notifs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#dark .notif-card{
+    background-color: black;
+    color: #fff;
+}

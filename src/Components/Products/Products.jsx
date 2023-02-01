@@ -25,8 +25,8 @@ const Products = () => {
     }
     return (
         <>
-        <h2 style={{textAlign:'center'}}>Products</h2>
-        <div className="products">
+        <h2 style={{textAlign:'center', marginTop:'10px'}}>Products</h2>
+        <div style={{marginTop:'29px'}} className="products">
         {myDatas.products.map(item => (
             <>
              <Card className="card" style={{marginBottom:'30px'}} sx={{ maxWidth: 345 }}>

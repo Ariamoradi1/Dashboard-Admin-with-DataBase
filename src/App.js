@@ -22,6 +22,14 @@ function App() {
   ])
     const [showModal, setShowModal] = useState(false)
     const [deleteId, setDeleteId] = useState("")
+    const [searchItem, setSearchItem] = useState('');
+  const [data, setData] = useState([
+    { id: 1, name: 'Product', link:'/products' },
+    { id: 2, name: 'Emploee', link:'/Users' },
+    { id: 3, name: 'Home', link:'/' },
+    { id: 4, name: 'Notifications', link:'/Notifications' }
+  ]);
+
     const toggleTheme = () => {
       setDarkMode(prev => (prev === "light" ? "dark" : "light"));
     }
@@ -48,7 +56,11 @@ function App() {
       showModal,
       setShowModal,
       deleteId,
-      setDeleteId
+      setDeleteId,
+      searchItem,
+      setSearchItem,
+      data,
+      setData
     }}>
     <div style={{height:'100%'}} id={darkMode}>
     <Navbar/>

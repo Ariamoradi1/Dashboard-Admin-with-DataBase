@@ -19,6 +19,7 @@ import { Link } from 'react-router-dom';
 import ReactSwitch from 'react-switch';
 import { useContext } from 'react';
 import { myData } from "../Context/myContext";
+import { Paper } from '@mui/material';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -84,7 +85,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
+  const filteredData = myDatas.data.filter((item) =>
+  item.name.toLowerCase().includes(myDatas.searchItem.toLowerCase())
+);
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -160,6 +163,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   );
 
   return (
+    <>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar className='appBar' style={{borderRadius:'10px'}} position="static">
         <Toolbar>
@@ -185,6 +189,8 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
+              value={myDatas.searchItem}
+              onChange={(e) => myDatas.setSearchItem(e.target.value)}
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
@@ -192,9 +198,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
           <ReactSwitch className='switch' onChange={myDatas.toggleTheme} checked={myDatas.darkMode === "dark"}/>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
+            <IconButton style={{marginTop:'5px'}} size="large" aria-label="show 4 new mails" color="inherit">
+              <Badge badgeContent={6} color="error">
+              <Link style={{color:'#fff'}} to='/Messages'>  <MailIcon /> </Link>
               </Badge>
             </IconButton>
             <IconButton
@@ -235,6 +241,21 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       {renderMobileMenu}
       {renderMenu}
     </Box>
+      {myDatas.searchItem ? (
+        <>
+        
+        <Paper className='paper-search' style={{width:'300px',height:'250px'}}>
+        <ul className='ul-search'>
+          {filteredData.map(item => (
+            <>
+           <Link to={item.link}><li className='li-search' key={item.id}>{item.name}</li></Link>
+            </>
+          ))}
+        </ul>
+        </Paper>
+      </>
+      ) : null}
+    </>
   );
 }
 
