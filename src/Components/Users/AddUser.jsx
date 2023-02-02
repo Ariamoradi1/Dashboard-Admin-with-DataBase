@@ -4,7 +4,8 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { myData } from "../../Context/myContext";
-import { Paper } from "@mui/material";
+import { Alert, Paper } from "@mui/material";
+import swal from 'sweetalert';
 
 
 const AddUser = () => {
@@ -16,8 +17,13 @@ const AddUser = () => {
         email : myDatas.email
     }
     const clickHandler = async () => {
-        if(myDatas.name === '' || myDatas.lastName === '' || myDatas.age === '' || myDatas.email === '') {
-            alert('Erorr')
+        if(myDatas.name === '' || myDatas.lastName === '' || isNaN(myDatas.email) ||myDatas.email < 18 || myDatas.email === '') {
+          swal({
+            title: "Please enter the fields correctly.",
+            text: "The fields should not be empty and the age field should not be anything other than a number and not below 18.",
+            icon: "error",
+            dangerMode: true,
+          })
         } else {
            await fetch('https://dashboard-users-b6cc4-default-rtdb.firebaseio.com/users.json',{
               method : 'POST',

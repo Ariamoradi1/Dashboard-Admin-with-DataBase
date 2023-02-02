@@ -29,7 +29,7 @@ const Users = () => {
     <h3 style={{textAlign:'center'}}>List Employee And Add</h3>
     <div className="add-user">
     <AddUser/>
-    <table class="styled-table">
+    <table className="styled-table">
     <thead>
         <tr>
             <th>Name</th>

@@ -79,7 +79,7 @@ const Tabels =  () => {
         </TableBody>
       </Table>
     </TableContainer>
-    <Paper className='papers' style={{width:'550px',height:'500px'}}>
+    <Paper className='papers' id="paper-chart">
     <div className="company">
     <Typography variant="span" component="div">
     Company Finance Growth

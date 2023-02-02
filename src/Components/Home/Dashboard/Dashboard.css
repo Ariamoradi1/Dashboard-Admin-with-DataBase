@@ -38,8 +38,14 @@
 
 .orders{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 60px;
+}
+
+.papers{
+    width: 550px;
+    height: 500px;
 }
 
 .company{
@@ -55,6 +61,7 @@ hr{
 .list{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -87,8 +94,13 @@ hr{
     margin: 25px 0;
     font-size: 0.9em;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
-    min-width: 400px;
+    max-width: 100px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#dark .papers-b{
+    background-color: black;
+    color: #fff;
 }
 
 .styled-table thead tr {
@@ -132,7 +144,7 @@ hr{
 .add-user{
     display: flex;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 a{
@@ -276,7 +288,35 @@ a{
     margin-top: 40px;
 }
 
+.papers-b{
+    width: 600px;
+    height: 300px;
+}
+
 #dark .notif-card{
     background-color: black;
     color: #fff;
+}
+
+@media (max-width:720px) {
+    .tableContainer{
+        width: fit-content;
+    }
+    .papers{
+        width: 370px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .papers-b{
+        margin-top: 20px;
+        width: 370px;
+    }
+   table{
+       width: 90%;
+       font-size: 10px;
+    }
+    .inputs{
+        width: 250px;
+        margin-left: 52px;
+    }
 }

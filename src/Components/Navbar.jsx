@@ -128,12 +128,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
+      <Link style={{display:'flex'}} to='/Messages'> <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+          <Badge badgeContent={6} color="error">
+           <MailIcon />
           </Badge>
         </IconButton>
-        <p>Messages</p>
+        <p style={{marginTop:'13px'}}>Messages</p>
+        </Link>
       </MenuItem>
       <MenuItem>
         <IconButton

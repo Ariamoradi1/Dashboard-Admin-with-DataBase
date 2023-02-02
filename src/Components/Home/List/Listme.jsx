@@ -132,7 +132,7 @@ const Listme = () => {
       </ListItem>
     </List>
     </Paper>
-    <Paper className='papers' style={{width:'600px',height:'300px'}}>
+    <Paper className='papers-b'>
     <Bar data={{
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
   datasets: [
