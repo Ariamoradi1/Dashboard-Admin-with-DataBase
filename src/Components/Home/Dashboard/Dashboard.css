@@ -94,7 +94,6 @@ hr{
     margin: 25px 0;
     font-size: 0.9em;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
-    max-width: 100px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -104,9 +103,16 @@ hr{
 }
 
 .styled-table thead tr {
-    background-color:  #1976d2;
-    color: #ffffff;
+    background-color:  #f3f3f3;
+    font-size: 13px;
+    color: #141413;
     text-align: left;
+    border-radius: 8px;
+}
+
+#dark .styled-table thead tr {
+    background-color: #141413;
+    color: #f0f0f0;
 }
 
 .styled-table th,
@@ -127,6 +133,10 @@ hr{
     border-bottom: 2px solid #1976d2;
 }
 
+#dark .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #f0f0f0;
+}
+
 .styled-table tbody tr.active-row {
     font-weight: bold;
     color:  #1976d2;
@@ -138,7 +148,7 @@ hr{
 }
 
 #dark .styled-table tbody tr {
-    color: #1976d2;
+    color: #f3f3f3;
     font-weight: bold;
 }
 .add-user{
@@ -287,7 +297,9 @@ a{
     flex-wrap: wrap;
     margin-top: 40px;
 }
-
+table{
+    width: 100%;
+}
 .papers-b{
     width: 600px;
     height: 300px;
@@ -297,11 +309,24 @@ a{
     background-color: black;
     color: #fff;
 }
+#dark .styled-table tbody tr.active-row {
+    color: #fff;
+}
+#dark .styled-table tbody tr:nth-of-type(even) {
+    background-color: black;
+    color: #f0f0f0;
+}
+.delete-button{
+    border: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 6px;
+    background-color: red;
+    cursor: pointer;
+}
 
 @media (max-width:720px) {
-    .tableContainer{
-        width: fit-content;
-    }
+    
     .papers{
         width: 370px;
         height: 400px;
@@ -310,10 +335,6 @@ a{
     .papers-b{
         margin-top: 20px;
         width: 370px;
-    }
-   table{
-       width: 90%;
-       font-size: 10px;
     }
     .inputs{
         width: 250px;

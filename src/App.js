@@ -29,6 +29,8 @@ function App() {
     { id: 3, name: 'Home', link:'/' },
     { id: 4, name: 'Notifications', link:'/Notifications' }
   ]);
+  const [showModalRemove,setShowModalRemove] = useState(false)
+  const [userId, setUserId] = useState("")
 
     const toggleTheme = () => {
       setDarkMode(prev => (prev === "light" ? "dark" : "light"));
@@ -60,7 +62,11 @@ function App() {
       searchItem,
       setSearchItem,
       data,
-      setData
+      setData,
+      showModalRemove,
+      setShowModalRemove,
+      userId,
+      setUserId
     }}>
     <div style={{height:'100%'}} id={darkMode}>
     <Navbar/>
