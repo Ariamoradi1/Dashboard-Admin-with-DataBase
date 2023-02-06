@@ -129,7 +129,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-      <ReactSwitch className='switch' onChange={myDatas.toggleTheme} checked={myDatas.darkMode === "dark"}/> <Typography style={{marginTop:'10px'}}>Dark Mode</Typography>
+      <ReactSwitch className='switch' onChange={myDatas.toggleTheme} checked={myDatas.darkMode === "dark"}/> <Typography style={{marginTop:'15px'}}>Dark Mode</Typography>
       </MenuItem>
       <MenuItem>
       <Link style={{display:'flex'}} to='/Messages'> <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -249,7 +249,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       {myDatas.searchItem ? (
         <>
         
-        <Paper className='paper-search' style={{width:'300px',height:'250px'}}>
+        <Paper className='paper-search'>
         <ul className='ul-search'>
           {filteredData.map(item => (
             <>

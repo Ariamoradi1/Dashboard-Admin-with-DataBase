@@ -90,6 +90,7 @@ hr{
 }
 .add-user{
     overflow: scroll;
+    padding-left: 150px;
 }
 .styled-table {
     border-collapse: collapse;
@@ -285,6 +286,8 @@ a{
     display: flex;
     justify-content: space-around;
     margin-left: 170px;
+    width: 350px;
+    height: 250px;
 }
 
 .li-search{
@@ -333,7 +336,10 @@ a{
 @media (max-width:720px) {
 
     
-    
+    .paper-search{
+        width: 100px;
+        margin-left: 130px;
+    }
     .papers{
         width: 370px;
         height: 400px;
@@ -346,5 +352,8 @@ a{
     .inputs{
         width: 250px;
         margin-left: 52px;
+    }
+    .notif-card{
+    margin-top: 15px;
     }
 }
