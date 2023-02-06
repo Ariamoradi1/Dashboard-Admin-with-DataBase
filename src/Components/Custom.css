@@ -90,7 +90,6 @@ hr{
 }
 .add-user{
     overflow: scroll;
-    padding-left: 150px;
 }
 .styled-table {
     border-collapse: collapse;
@@ -359,5 +358,9 @@ a{
     .paperModal{
         font-size: 13px;
         width: 100px;
+    }
+    .add-user{
+        overflow: scroll;
+        padding-left: 150px;
     }
 }
