@@ -30,13 +30,6 @@ const Users = () => {
       }).then(res => console.log(res))
       myDatas.setRealTime(prev => !prev)
      }
-     const style = {
- 
-      // Adding media query..
-      '@media (max-width: 720px)': {
-        width: '300px',
-      },
-    }
     return (
     <>
     <h3 style={{textAlign:'center'}}>List Employee And Add</h3>
@@ -57,8 +50,8 @@ const Users = () => {
         <tr>
         <td>{user[1].name}</td>
         <td>{user[1].lastName}</td>
-        <td>{user[1].age}</td>
         <td>{user[1].email}</td>
+        <td>{user[1].age}</td>
         <td style={{display:'flex',justifyContent:'center'}}>
         <button onClick={() => {
           myDatas.setShowModalRemove(true)

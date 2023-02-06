@@ -20,6 +20,7 @@ import ReactSwitch from 'react-switch';
 import { useContext } from 'react';
 import { myData } from "../Context/myContext";
 import { Paper } from '@mui/material';
+import './Custom.css'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -127,6 +128,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
+      <MenuItem>
+      <ReactSwitch className='switch' onChange={myDatas.toggleTheme} checked={myDatas.darkMode === "dark"}/> <Typography style={{marginTop:'10px'}}>Dark Mode</Typography>
+      </MenuItem>
       <MenuItem>
       <Link style={{display:'flex'}} to='/Messages'> <IconButton size="large" aria-label="show 4 new mails" color="inherit">
           <Badge badgeContent={6} color="error">

@@ -88,13 +88,17 @@ hr{
     flex-direction: column;
     justify-content: center;
 }
-
+.add-user{
+    overflow: scroll;
+}
 .styled-table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
+    width: 100%;
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   
 }
 
 #dark .papers-b{
@@ -117,7 +121,11 @@ hr{
 
 .styled-table th,
 .styled-table td {
+    font-size: 14px;
     padding: 12px 15px;
+    text-align: center;
+    word-break: initial;
+    
 }
 
 .styled-table tbody tr {
@@ -297,9 +305,6 @@ a{
     flex-wrap: wrap;
     margin-top: 40px;
 }
-table{
-    width: 100%;
-}
 .papers-b{
     width: 600px;
     height: 300px;
@@ -326,6 +331,8 @@ table{
 }
 
 @media (max-width:720px) {
+
+    
     
     .papers{
         width: 370px;

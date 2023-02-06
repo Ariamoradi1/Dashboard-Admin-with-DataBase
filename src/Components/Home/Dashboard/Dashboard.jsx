@@ -6,7 +6,6 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
-import './Dashboard.css'
 import { TrendingUp } from '@mui/icons-material';
 
 const bull = (

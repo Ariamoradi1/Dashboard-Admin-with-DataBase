@@ -17,7 +17,7 @@ const AddUser = () => {
         email : myDatas.email
     }
     const clickHandler = async () => {
-        if(myDatas.name === '' || myDatas.lastName === '' || isNaN(myDatas.email) ||myDatas.email < 18 || myDatas.email === '') {
+        if(myDatas.name === '' || myDatas.lastName === '' || isNaN(myDatas.age) ||myDatas.age < 18 || myDatas.email === '') {
           swal({
             title: "Please enter the fields correctly.",
             text: "The fields should not be empty and the age field should not be anything other than a number and not below 18.",
@@ -73,16 +73,16 @@ const AddUser = () => {
         helperText=" "
         id="demo-helper-text-aligned-no-helper"
         label="Email"
-        value={myDatas.age}
-        onChange={(e) => myDatas.setAge(e.target.value)}
+        value={myDatas.email}
+        onChange={(e) => myDatas.setEmail(e.target.value)}
       />
        <TextField
         className="inputUser"
         helperText=" "
         id="demo-helper-text-aligned-no-helper"
         label="Age"
-        value={myDatas.email}
-        onChange={(e) => myDatas.setEmail(e.target.value)}
+        value={myDatas.age}
+        onChange={(e) => myDatas.setAge(e.target.value)}
       />
     </Box>
     
