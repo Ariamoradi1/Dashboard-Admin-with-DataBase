@@ -356,4 +356,8 @@ a{
     .notif-card{
     margin-top: 15px;
     }
+    .paperModal{
+        font-size: 13px;
+        width: 100px;
+    }
 }
