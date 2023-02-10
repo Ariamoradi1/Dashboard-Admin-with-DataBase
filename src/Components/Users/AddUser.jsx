@@ -8,6 +8,8 @@ import { Alert, Paper } from "@mui/material";
 import swal from 'sweetalert';
 
 
+
+
 const AddUser = () => {
     const myDatas = useContext(myData)
     let userObj = {
@@ -33,10 +35,6 @@ const AddUser = () => {
         }
         myDatas.setRealTime(prev => !prev)
       }
-          
-        
-      
-          
             
     return(
         <>
