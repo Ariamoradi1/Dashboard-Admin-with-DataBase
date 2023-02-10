@@ -69,7 +69,7 @@ const Users = () => {
    </div>
    {myDatas.showModalRemove && <div className="modalContainer">
         <Paper className="paperModal" style={{width:'400px',height:'300px',boxShadow:'rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px'}}>
-        <h2>Delete Product</h2>
+        <h2>Delete Employee</h2>
         <p>Are You Sure To Delete The Employee?</p>
         <p>note: If You Delete The Employee, There is No Going Back!</p>
         <div className="button">
