@@ -89,7 +89,8 @@ hr{
     justify-content: center;
 }
 .add-user{
-    overflow: scroll;
+    
+    margin-top: 60px;
 }
 .styled-table {
     border-collapse: collapse;

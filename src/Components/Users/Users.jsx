@@ -15,9 +15,6 @@ const Users = () => {
       fetch('https://dashboard-users-b6cc4-default-rtdb.firebaseio.com/users.json').then(res => res.json()).then(
      data => {
       myDatas.setUserArray(Object.entries(data))
-      console.log(Object.entries(data))
-      
-      
      }
       
     )
@@ -32,7 +29,8 @@ const Users = () => {
      }
     return (
     <>
-    <h3 style={{textAlign:'center'}}>List Employee And Add</h3>
+    <h3 style={{textAlign:'center',marginTop:'40px'}}>Management Employees</h3>
+    <AddUser/>
     <div className="add-user">
     <table className="styled-table">
     <thead>
@@ -78,7 +76,6 @@ const Users = () => {
         </div>
         </Paper>
         </div>}
-        <AddUser/>
     </>
     )
 }
