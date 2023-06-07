@@ -12,7 +12,7 @@ import { Paper } from "@mui/material";
 const Users = () => {
   const myDatas = useContext(myData)
      useEffect(() => {
-      fetch('https://dashboard-users-b6cc4-default-rtdb.firebaseio.com/users.json').then(res => res.json()).then(
+      fetch('https://dash-6248c-default-rtdb.firebaseio.com/users.json').then(res => res.json()).then(
      data => {
       myDatas.setUserArray(Object.entries(data))
      }
@@ -22,7 +22,7 @@ const Users = () => {
 
      const removeEmployeHandler = async () => {
       myDatas.setShowModalRemove(false)
-     await fetch(`https://dashboard-users-b6cc4-default-rtdb.firebaseio.com/users/${myDatas.userId}.json`, {
+     await fetch(`https://dash-6248c-default-rtdb.firebaseio.com/users/${myDatas.userId}.json`, {
         method : 'DELETE',
       }).then(res => console.log(res))
       myDatas.setRealTime(prev => !prev)
